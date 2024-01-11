@@ -40,7 +40,7 @@
 \RequirePackage{fontawesome}
 
 %% 更改摘要二字的样式
-\renewcommand{\abstractname}{\textbf{\large {摘\quad 要}}} 
+\renewcommand{\abstractname}{\textbf{\large {摘\quad 要}}}
 
 %可固定下划线长度
 \makeatletter
@@ -82,25 +82,25 @@
 
 %%参考文献设置
 \newcommand{\reference}{
-%\nocite{*}   %打开此选项会列出bib里面的所有参考文献
-\bibliographystyle{unsrt} %规定了参考文献的格式
-\begin{center}%居中
-	\bibliography{reference} %调出LaTeX生成参考文献列表
-\end{center}
+    %\nocite{*}   %打开此选项会列出bib里面的所有参考文献
+    \bibliographystyle{unsrt} %规定了参考文献的格式
+    \begin{center}%居中
+        \bibliography{reference} %调出LaTeX生成参考文献列表
+    \end{center}
 }
 
 %%文本框设置
 \newcommand{\tbox}[1]{
-\begin{center}
-\begin{tcolorbox}[colback=gray!10,%gray background
-                  colframe=black,% black frame colour
-                  width=8cm,% Use 8cm total width,
-                  arc=1mm, auto outer arc,
-                  boxrule=0.5pt,
-                 ]
-{#1}
-\end{tcolorbox}
-\end{center}
+    \begin{center}
+        \begin{tcolorbox}[colback=gray!10,%gray background
+                colframe=black,% black frame colour
+                width=8cm,% Use 8cm total width,
+                arc=1mm, auto outer arc,
+                boxrule=0.5pt,
+            ]
+            {#1}
+        \end{tcolorbox}
+    \end{center}
 }
 
 %%页眉设置
@@ -111,33 +111,33 @@
 
 
 %封面页设置
-{   
+{
     \title{ \vspace{3cm} \heiti \Huge \textbf{{XXXX课程报告}} \par
-    \vspace{1cm} 
-    \heiti \Large {\underline{XXXXXX进展调研}}    
-    \vspace{3cm} }%标题
+        \vspace{1cm}
+        \heiti \Large {\underline{XXXXXX进展调研}}
+        \vspace{3cm} }%标题
 
     \author{
-    \vspace{0.5cm}
-    \kaishu\Large 姓名\ \dlmu[9cm]{XXX} \qquad \\ %姓名 
-    \vspace{0.5cm}
-    \kaishu\Large  学号\ \dlmu[9cm]{在此填写学号} \qquad  \\ %学号
-    \vspace{0.5cm}
-    \kaishu\Large   院所\ \dlmu[9cm]{中国科学院计算技术研究所} %院所
-        }
-        
+        \vspace{0.5cm}
+        \kaishu\Large 姓名\ \dlmu[9cm]{薛潮辉} \qquad \\ %姓名 
+        \vspace{0.5cm}
+        \kaishu\Large  学号\ \dlmu[9cm]{SA23004055} \qquad  \\ %学号
+        \vspace{0.5cm}
+        \kaishu\Large   院系\ \dlmu[9cm]{物理学院近代物理系} %院所
+    }
+
     \date{\today} % 默认为今天的日期，可以注释掉不显示日期
 }
 
 %%在这里可更改封面logo
 \newcommand{\cover}{
-%%封面校名logo，图片都在figures文件夹里
-\begin{figure}
-	\centering
+    %%封面校名logo，图片都在figures文件夹里
+    \begin{figure}
+        \centering
         \vspace{2cm}
-	\includegraphics[width=0.6\textwidth]{figures/ucas_logo.pdf}
-\end{figure} 
+        \includegraphics[width=0.6\textwidth]{figures/ustc_logo_stack.eps}
+    \end{figure}
 
-\maketitle
+    \maketitle
 }
 
